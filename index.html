@@ -19,16 +19,16 @@
       <div class="row">                               
         <div class="col-md-4">                                     
           <div class="col-md-6">                                               
-            <a href="javascript:addCommand('up \n')" class="btn btn-primary">                                            
+            <a href="javascript:addCommand('up \n'); javascript:addImage('<img src=\'img/200-up.png\' width=\'70\'> <br>')" class="btn btn-primary">                                            
               <img src="img/200-up.png" alt="" width="70"></a>                                      
             <br>                                               
-            <a href="javascript:addCommand('left \n')" class="btn btn-primary">                                            
+            <a href="javascript:addCommand('left \n'); javascript:addImage('<img src=\'img/200-left.png\' width=\'70\'> <br>')" class="btn btn-primary">                                            
               <img src="img/200-left.png" alt="" width="70"></a>                                      
             <br>                                               
-            <a href="javascript:addCommand('right \n')" class="btn btn-primary">                                            
+            <a href="javascript:addCommand('right \n'); javascript:addImage('<img src=\'img/200-right.png\' width=\'70\'> <br>')" class="btn btn-primary">                                            
               <img src="img/200-right.png" alt="" width="70"></a>                                      
             <br>                                               
-            <a href="javascript:addCommand('down \n')" class="btn btn-primary">                                            
+            <a href="javascript:addCommand('down \n'); javascript:addImage('<img src=\'img/200-down.png\' width=\'70\'> <br>')" class="btn btn-primary">                                            
               <img src="img/200-down.png" alt="" width="70"></a>                                      
             <br>                                     
           </div>                                     
@@ -54,8 +54,11 @@
         </div>                    
       </div>                    
       <br>                    
-      <div class="row">                               
-        <div class="col-md-12">                                         
+      <div class="row">     
+        <div class="col-md-6" id="imageWell">
+          
+        </div>                          
+        <div class="col-md-6">                                         
           <form action="">
             <textarea name="commandqueue" id="commandqueue" cols="30" rows="10"></textarea>
         </div>                          
@@ -80,6 +83,11 @@
 function addCommand(text) {
   document.getElementById('commandqueue').value += text
 }
+
+function addImage(text) {
+  document.getElementById('imageWell').innerHTML += text
+}
+
 
 </script>
   </body>
