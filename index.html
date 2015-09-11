@@ -1,94 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">           
-  <head>                   
-    <meta charset="utf-8">                   
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">                   
-    <meta name="viewport" content="width=device-width, initial-scale=1">                   
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->                      
-    <meta name="description" content="">                   
-    <meta name="author" content="OOZLabs">                   
-    <title>OOZLabs               
-    </title>                   
-    <!-- Bootstrap core CSS -->                      
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">                   
-    <!-- Custom styles for this template -->                      
-    <link href="starter-template.css" rel="stylesheet">           
-  </head>           
-  <body>                   
-    <div class="container text-center">                    
-      <div class="row">                               
-        <div class="col-md-4">                                     
-          <div class="col-md-6">                                               
-            <a href="javascript:addCommand('up \n'); javascript:addImage('<img src=\'img/200-up.png\' width=\'70\'> ')" class="btn btn-primary">                                            
-              <img src="img/200-up.png" alt="" width="70"></a>                                      
-            <br>                                               
-            <a href="javascript:addCommand('left \n'); javascript:addImage('<img src=\'img/200-left.png\' width=\'70\'> ')" class="btn btn-primary">                                            
-              <img src="img/200-left.png" alt="" width="70"></a>                                      
-            <br>                                               
-            <a href="javascript:addCommand('right \n'); javascript:addImage('<img src=\'img/200-right.png\' width=\'70\'> ')" class="btn btn-primary">                                            
-              <img src="img/200-right.png" alt="" width="70"></a>                                      
-            <br>                                               
-            <a href="javascript:addCommand('down \n'); javascript:addImage('<img src=\'img/200-down.png\' width=\'70\'> ')" class="btn btn-primary">                                            
-              <img src="img/200-down.png" alt="" width="70"></a>                                      
-            <br>                                     
-          </div>                                     
-          <div class="col-md-6">                                               
-            <a href="" class="btn btn-primary">                                            
-              <img src="img/200-blank.png" alt="" width="70"></a>                                      
-            <br>                                               
-            <a href="" class="btn btn-primary">                                            
-              <img src="img/200-blank.png" alt="" width="70"></a>                                      
-            <br>                                               
-            <a href="" class="btn btn-primary">                                            
-              <img src="img/200-blank.png" alt="" width="70"></a>                                      
-            <br>                                               
-            <a href="" class="btn btn-primary">                                            
-              <img src="img/200-blank.png" alt="" width="70"></a>                                      
-            <br>                                     
-          </div>                               
-        </div>                               
-        <div class="col-md-8">                                         
-          <img src="http://placehold.it/512x288" alt="">                               
+<html lang="en">              
+  <head>                        
+    <meta charset="utf-8">                        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">                        
+    <meta name="viewport" content="width=device-width, initial-scale=1">                        
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->                            
+    <meta name="description" content="">                        
+    <meta name="author" content="OOZLabs">                        
+    <title>OOZLabs                    
+    </title>                        
+    <!-- Bootstrap core CSS -->                            
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">                        
+    <!-- Custom styles for this template -->                            
+    <link href="starter-template.css" rel="stylesheet">              
+  </head>              
+  <body>                        
+    <div class="container text-center">                           
+      <div class="row">                                        
+        <div class="col-md-4">                                                
+          <div class="col-md-6">                                                            
+            <a href="javascript:addCommand('up \n'); javascript:addImage('<img src=\'img/200-up.png\' width=\'70\'> ')" class="btn btn-primary">                                                           
+              <img src="img/200-up.png" alt="" width="70"></a>                                                   
+            <br>                                                            
+            <a href="javascript:addCommand('left \n'); javascript:addImage('<img src=\'img/200-left.png\' width=\'70\'> ')" class="btn btn-primary">                                                           
+              <img src="img/200-left.png" alt="" width="70"></a>                                                   
+            <br>                                                            
+            <a href="javascript:addCommand('right \n'); javascript:addImage('<img src=\'img/200-right.png\' width=\'70\'> ')" class="btn btn-primary">                                                           
+              <img src="img/200-right.png" alt="" width="70"></a>                                                   
+            <br>                                                            
+            <a href="javascript:addCommand('down \n'); javascript:addImage('<img src=\'img/200-down.png\' width=\'70\'> ')" class="btn btn-primary">                                                           
+              <img src="img/200-down.png" alt="" width="70"></a>                                                   
+            <br>                                                
+          </div>                                                
+          <div class="col-md-6">                                                            
+            <a href="" class="btn btn-primary">                                                           
+              <img src="img/200-blank.png" alt="" width="70"></a>                                                   
+            <br>                                                            
+            <a href="" class="btn btn-primary">                                                           
+              <img src="img/200-blank.png" alt="" width="70"></a>                                                   
+            <br>                                                            
+            <a href="" class="btn btn-primary">                                                           
+              <img src="img/200-blank.png" alt="" width="70"></a>                                                   
+            <br>                                                            
+            <a href="" class="btn btn-primary">                                                           
+              <img src="img/200-blank.png" alt="" width="70"></a>                                                   
+            <br>                                                
+          </div>                                        
+        </div>                                        
+        <div class="col-md-8">                                                    
+          <img src="http://placehold.it/512x288" alt="">                                        
+        </div>                                   
+        <div class="col-md-8">Mars Livestream                                        
+        </div>                           
+      </div>                           
+      <br>                           
+      <div class="row">              
+        <div class="col-md-6" id="imageWell">                   
+        </div>                                    
+        <div class="col-md-6">                                                       
+          <form action="">             
+<textarea name="commandqueue" hidden="true" id="commandqueue" cols="30" rows="10"></textarea>          
+        </div>                                    
+        <div class="col-md-12">Command queue                                         
+        </div>                                                          
+        <div class="col-md-12">                    
+          <button type="submit" class="btn btn-default">Submit   
+          </button>                                        
+          </form>                                         
         </div>                          
-        <div class="col-md-8">Mars Livestream                               
-        </div>                    
-      </div>                    
-      <br>                    
-      <div class="row">     
-        <div class="col-md-6" id="imageWell">
-          
-        </div>                          
-        <div class="col-md-6">                                         
-          <form action="">
-            <textarea name="commandqueue" id="commandqueue" cols="30" rows="10"></textarea>
-        </div>                          
-        <div class="col-md-12">Command queue                               
-        </div>                                                
-        <div class="col-md-12">    
-            <button type="submit" class="btn btn-default">Submit</button>                          
-          </form>                               
-        </div>                    
-      </div>                   
-    </div>              
-    <!-- /.container -->                     
+      </div>                        
+    </div>                   
+    <!-- /.container -->                           
     <!-- Bootstrap core JavaScript
-                    ================================================== -->                      
-    <!-- Placed at the end of the document so the pages load faster -->          
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>          
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>          
-<script src="assets/js/bootstrap.min.js"></script>              
-
-<!-- build command queue -->
+                        ================================================== -->                            
+    <!-- Placed at the end of the document so the pages load faster -->            
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>            
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>            
+<script src="assets/js/bootstrap.min.js"></script>                
+    <!-- build command queue --> 
 <script>
 function addCommand(text) {
   document.getElementById('commandqueue').value += text
 }
-
 function addImage(text) {
   document.getElementById('imageWell').innerHTML += text
-}
-
-
-</script>
+} 
+</script>   
   </body>
 </html>
