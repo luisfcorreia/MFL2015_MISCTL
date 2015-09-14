@@ -2,13 +2,21 @@ body {
   padding-top: 50px;
   margin: 0;
   background: url(img/mars_surface.jpg);
-  background-size: 1280px 1024px;
+  background-size: cover;
   background-repeat:no-repeatdisplay: compact;
 }
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
+
+/* Buttons */
+
+.btn-primary{
+  border-color: #696969;
+  background-color: rgba(152, 152, 152, 0.51);
+}
+
 
 .battery {
     display: inline-block;
