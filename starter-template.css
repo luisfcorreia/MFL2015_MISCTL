@@ -3,7 +3,8 @@ body {
   margin: 0;
   background: url(img/mars_surface.jpg);
   background-size: cover;
-  background-repeat:no-repeatdisplay: compact;
+  background-repeat:no-repeat;
+  display: compact;
 }
 .starter-template {
   padding: 40px 15px;
