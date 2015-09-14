@@ -1,9 +1,15 @@
 body {
   padding-top: 50px;
+<<<<<<< HEAD
   margin: 0;
   background: url(img/mars_surface.jpg);
   background-size: 1280px 1024px;
   background-repeat:no-repeatdisplay: compact;
+=======
+  background-image: url("img/mars_surface.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+>>>>>>> origin/master
 }
 .starter-template {
   padding: 40px 15px;
