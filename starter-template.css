@@ -1,15 +1,9 @@
 body {
   padding-top: 50px;
-<<<<<<< HEAD
   margin: 0;
   background: url(img/mars_surface.jpg);
   background-size: 1280px 1024px;
   background-repeat:no-repeatdisplay: compact;
-=======
-  background-image: url("img/mars_surface.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
->>>>>>> origin/master
 }
 .starter-template {
   padding: 40px 15px;
@@ -87,16 +81,3 @@ body {
     height: 9.5em;
 }
 
-.badge {
-    background: radial-gradient( 5px -9px, circle, white 8%, red 26px );
-    background-color: red;
-    border: 2px solid white;
-    border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
-    box-shadow: 1px 1px 1px black;
-    color: white;
-    font: bold 15px/13px Helvetica, Verdana, Tahoma;
-    height: 16px; 
-    min-width: 14px;
-    padding: 4px 3px 0 3px;
-    text-align: center;
-}
