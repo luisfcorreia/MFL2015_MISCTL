@@ -6,18 +6,22 @@ body {
   background-repeat:no-repeat;
   display: compact;
 }
+
 .starter-template {
   padding: 40px 15px;
   text-align: center;
 }
 
-/* Buttons */
+.cmd { 
+  visibility: hidden; 
+  display: none; 
+}
 
+/* Buttons */
 .btn-primary{
   border-color: #696969;
   background-color: rgba(152, 152, 152, 0.51);
 }
-
 
 .battery {
     display: inline-block;
