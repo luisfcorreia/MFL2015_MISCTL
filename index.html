@@ -43,7 +43,6 @@
             <input type="hidden" name="cq" id="cq" >
         </div>
       </div>
-
       <div class="row">
         <div class="col-md-6">
           <button type="submit" class="btn btn-default"><img src='img/arrow.png' width='70'>Enviar comandos</button>
@@ -63,13 +62,17 @@
     <script>
       function addItem(cmd,img) {
         if (document.getElementById('cq').value.length <= 7) {
-          document.getElementById('cq').value += cmd
-          document.getElementById('imageWell').innerHTML += img
+          document.getElementById('cq').value += cmd;
+          document.getElementById('imageWell').innerHTML += img;
         }
       }
       function clearStuff() {
-        document.getElementById('cq').value = ""
-        document.getElementById('imageWell').innerHTML = "<img src='img/200-blank.png' width='70'>"
+        document.getElementById('cq').value = "";
+        document.getElementById('imageWell').innerHTML = "<img src='img/200-blank.png' width='70'>";
+      }
+      function sendCommands(){
+        cmd = "MIS" + document.getElementById('cq').value + "SIM";
+        sendCommand(cmd);
       }
     </script>
     <script src="mqttws31.js"></script>

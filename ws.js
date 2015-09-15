@@ -1,9 +1,7 @@
 // Create a client instance
-client = new Paho.MQTT.Client("localhost", 1883, "MISCTL");
-
-// set callback handlers
-client.onConnectionLost = onConnectionLost;
-client.onMessageArrived = onMessageArrived;
+var host = "127.0.0.1"
+var port = 1883
+var client = new Paho.MQTT.Client(host, port, "myclientid_" + parseInt(Math.random() * 100, 10));
 
 // connect the client
 client.connect({onSuccess:onConnect});
@@ -12,27 +10,11 @@ client.connect({onSuccess:onConnect});
 function onConnect() {
   // Once a connection has been made, make a subscription and send a message.
   console.log("onConnect");
-  client.subscribe("/World");
-  message = new Paho.MQTT.Message("Hello");
-  message.destinationName = "/World";
-  client.send(message); 
-}
-
-// called when the client loses its connection
-function onConnectionLost(responseObject) {
-  if (responseObject.errorCode !== 0) {
-    console.log("onConnectionLost:"+responseObject.errorMessage);
-  }
-}
-
-// called when a message arrives
-function onMessageArrived(message) {
-  console.log("onMessageArrived:"+message.payloadString);
 }
 
 // send command to rover
 function sendCommand(cmd){
-  message = new Paho.MQTT.Message("rover");
-  message.destinationName = "/command";
-  client.send(cmd); 
+  var message = new Paho.MQTT.Message(cmd);
+  message.destinationName = "rover/command";
+  client.send(message);
 }

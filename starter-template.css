@@ -4,7 +4,6 @@ body {
   background: url(img/background.jpg);
   background-size: cover;
   background-repeat:no-repeat;
-  display: compact;
 }
 
 .starter-template {
