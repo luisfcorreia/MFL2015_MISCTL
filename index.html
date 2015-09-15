@@ -62,8 +62,10 @@
     <!-- build command queue -->
     <script>
       function addItem(cmd,img) {
-        document.getElementById('cq').value += cmd
-        document.getElementById('imageWell').innerHTML += img
+        if (document.getElementById('cq').value.length <= 7) {
+          document.getElementById('cq').value += cmd
+          document.getElementById('imageWell').innerHTML += img
+        }
       }
       function clearStuff() {
         document.getElementById('commandqueue').value = ""
